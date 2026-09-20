@@ -29,7 +29,7 @@ namespace PostBoxGame
     {
         public int columns = 8;
         public int rows = 6;
-        public float runSeconds = 240;
+        public float runSeconds = 180;
         public float firstArrivalDelay = 5;
         public float minArrivalInterval = 3.5f;
         public float maxArrivalInterval = 7;
@@ -70,11 +70,19 @@ namespace PostBoxGame
         public Route correctRoute;
         public int x, y;
         public bool rotated;
+        public bool lShaped;
         public float arrivedAt;
         public float deadline;
         public float settledAt;
         public int Width => rotated ? spec.height : spec.width;
         public int Height => rotated ? spec.width : spec.height;
+        public int FilledCells => lShaped ? 5 : Width*Height;
+        public bool Occupies(int localX,int localY)
+        {
+            if(localX<0 || localY<0 || localX>=Width || localY>=Height)return false;
+            if(!lShaped)return true;
+            return rotated ? localY==0 || localX==0 : localX==0 || localY==2;
+        }
         public string Label => addressee + "\n" + printedNumber + " Mercer Street\n" + spec.kind.ToString().ToUpperInvariant();
     }
 }

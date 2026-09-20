@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp:PostBoxGame:PostBoxConfig
   columns: 8
   rows: 6
-  runSeconds: 240
+  runSeconds: 180
   firstArrivalDelay: 5
   minArrivalInterval: 3.5
   maxArrivalInterval: 7

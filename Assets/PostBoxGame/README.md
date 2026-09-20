@@ -4,11 +4,13 @@ Open `Assets/PostBoxGame/Scenes/PostBox.unity` in Unity 6000.0.59f2 and press Pl
 
 ## Marker
 
-Use a vivid blue or green matte card in even light. Select the camera, hold the card in the yellow target at a comfortable distance, and press **Calibrate**. The camera samples its color and visible size. Move the card left/right/up/down to tilt the post box body; bring it closer until the top says **SLOT OPEN**, then move it back until it says **SLOT CLOSED**. A lost marker pauses the run until tracking resumes. Recalibrate by restarting Play mode. The camera preview appears only on the calibration screen.
+Use a vivid blue or green matte card in even light. Select the camera, hold the card in the yellow target at a comfortable distance, and press **Calibrate**. The camera samples its color, visible size, and resting position. Move the card left/right/up/down from that resting position to tilt the post box body; vertical movement responds to smaller motions. Bring it closer until the top says **SLOT OPEN**, then move it back until it says **SLOT CLOSED**. A lost marker pauses the run until tracking resumes. Recalibrate by restarting Play mode. The camera preview appears only on the calibration screen.
 
 ## Play
 
-Mail falls into the top of your body. Tilt to slide the active piece around the 8×6 interior, press **R** to rotate, choose a route with **1–6** or the route buttons, then press **Space** to settle it. **Tab** opens the attached resident card. The postal carrier collects after four minutes. Express mail must be settled within 25 seconds. Charles's mail is held; Ramiro's old address is forwarded to his current route; mismatched addresses and Jesse Fuchs's mail are returned.
+Mail falls into the top of your body. Tilt to slide the active piece around the 8×6 interior, press **R** to rotate, choose a route with **1–6** or the route buttons, then press **Space** to settle it. **Tab** opens the attached resident card. The postal carrier collects after three minutes, or you can press **C** / **COLLECT NOW** to call collection early when you are full. Unsettled mail counts against the result. Express mail must be settled within 25 seconds. Charles's mail is held; Ramiro's old address is forwarded to his current route; mismatched addresses and Jesse Fuchs's mail are returned.
+
+At least one L-shaped parcel arrives after about 25 seconds of an open slot; later parcels may also have that shape. The empty corner is usable space, and rotating the parcel changes which corner is free.
 
 ## Debug and accessibility
 
