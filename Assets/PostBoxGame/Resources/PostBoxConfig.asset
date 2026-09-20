@@ -1,0 +1,97 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: PostBoxConfig
+  m_EditorClassIdentifier: Assembly-CSharp:PostBoxGame:PostBoxConfig
+  columns: 8
+  rows: 6
+  runSeconds: 240
+  firstArrivalDelay: 5
+  minArrivalInterval: 3.5
+  maxArrivalInterval: 7
+  residents:
+  - name: Charles Pratt
+    number: 12
+    oldNumber: 0
+    vacationHold: 1
+    note: 'Vacation hold: keep his mail inside.'
+  - name: Noami Clark
+    number: 16
+    oldNumber: 0
+    vacationHold: 0
+    note: Regular delivery.
+  - name: Eric Zimmerman
+    number: 20
+    oldNumber: 0
+    vacationHold: 0
+    note: Regular delivery.
+  - name: Burgress Voshell
+    number: 24
+    oldNumber: 0
+    vacationHold: 0
+    note: Regular delivery.
+  - name: Ramiro Corbetta
+    number: 28
+    oldNumber: 18
+    vacationHold: 0
+    note: Moved from 18 to 28. Forward old-address mail.
+  - name: Winnie Song
+    number: 32
+    oldNumber: 0
+    vacationHold: 0
+    note: '32 Mercer: former resident Jesse Fuchs. Return his mail.'
+  mail:
+  - kind: 0
+    width: 3
+    height: 1
+    value: 100
+    canRotate: 1
+  - kind: 1
+    width: 2
+    height: 1
+    value: 80
+    canRotate: 1
+  - kind: 2
+    width: 2
+    height: 3
+    value: 170
+    canRotate: 1
+  - kind: 3
+    width: 3
+    height: 3
+    value: 250
+    canRotate: 1
+  - kind: 4
+    width: 3
+    height: 1
+    value: 240
+    canRotate: 1
+  - kind: 5
+    width: 3
+    height: 2
+    value: 210
+    canRotate: 1
+  - kind: 6
+    width: 3
+    height: 1
+    value: 120
+    canRotate: 1
+  - kind: 7
+    width: 3
+    height: 1
+    value: 180
+    canRotate: 1
+  - kind: 8
+    width: 3
+    height: 1
+    value: 120
+    canRotate: 1
